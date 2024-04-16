@@ -33,6 +33,7 @@
 :root {
   --white: hsl(0, 0%, 100%);
   --lightPink: hsl(275, 100%, 97%);
+  --brightPurple: #ad28eb;
   --greyPurple: hsl(292, 16%, 49%);
   --darkPurple: hsl(292, 42%, 14%)
 }
@@ -249,6 +250,13 @@ section#faqContainer>*+* {
   justify-content: space-between;
   text-align: left;
   cursor: pointer;
+  -webkit-transition: ease .3s;
+  -o-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.faq-question:hover {
+  color: var(--brightPurple);
 }
 
 section#faqContainer .faq:last-child {
@@ -259,7 +267,6 @@ section#faqContainer .faq:last-child {
 .faq:last-child .faq-question {
   padding-bottom: 0;
 }
-
 
 .faq-answer {
   max-height: 0;
