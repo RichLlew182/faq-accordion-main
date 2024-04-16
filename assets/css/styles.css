@@ -129,14 +129,12 @@ body {
 
 h1 {
   font-family: 'WorkSansBold', Arial, sans-serif;
+  font-size: 56px;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-family: 'WorkSansSemiBold', Arial, sans-serif;
+  font-size: 18px;
 }
 
 /* Custom Styling */
@@ -186,12 +184,25 @@ section#faqContainer {
   position: relative;
   width: 600px;
   margin: auto;
-  padding: 50px;
+  padding: 60px 40px;
   border-radius: 25px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+section#faqContainer>*+* {
+  margin-top: 35px;
 }
 
 .faq-question {
+  display: block;
   border-bottom: 2px solid #faf9ff;
+  padding-bottom: 35px;
+}
+
+.faq:last-child .faq-question {
+  padding-bottom: 0;
+  border: none;
 }
 
 .faq-answer.collapsed {
