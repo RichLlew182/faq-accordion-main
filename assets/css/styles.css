@@ -215,6 +215,22 @@ section#faqContainer>*+* {
   padding-bottom: 1.5em;
 }
 
+.faq-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+
 .faq {
   border-bottom: 2px solid #faf9ff;
 }
@@ -254,3 +270,5 @@ section#faqContainer .faq:last-child {
   margin-top: 1.5em;
   height: auto;
 }
+
+/* Media Queries */
