@@ -1,0 +1,33 @@
+/* Regular */
+@font-face {
+  font-family: 'WorkSansRegular';
+  src: url('../fonts/static/WorkSans-Regular.ttf') format('woff2'),
+    url('../fonts/static/WorkSans-Regular.ttf') format('woff'),
+    url('../fonts/static/WorkSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Semi Bold */
+@font-face {
+  font-family: 'WorkSansSemiBold';
+  src: url('../fonts/static/WorkSans-SemiBold.ttf') format('woff2'),
+    url('../fonts/static/WorkSans-SemiBold.ttf') format('woff'),
+    url('../fonts/static/WorkSans-SemiBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'WorkSansBold';
+  src: url('../fonts/static/WorkSans-Bold.ttf') format('woff2'),
+    url('../fonts/static/WorkSans-Bold.ttf') format('woff'),
+    url('../fonts/static/WorkSans-Bold.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+body {
+  font-family: 'WorkSansRegular';
+}
