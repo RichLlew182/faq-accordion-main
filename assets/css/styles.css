@@ -154,7 +154,7 @@ h1 {
 }
 
 h2,
-.faq-question p {
+.faq-question {
   font-family: 'WorkSansSemiBold', Arial, sans-serif;
   font-size: 18px;
   line-height: 1.3;
@@ -255,6 +255,9 @@ header.top {
   -webkit-transition: ease .3s;
   -o-transition: ease .3s;
   transition: ease .3s;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-column-gap: 10px;
   -moz-column-gap: 10px;
   column-gap: 10px;
@@ -303,7 +306,7 @@ header.top {
     font-size: 32px;
   }
 
-  .faq-question p {
+  .faq-question {
     font-size: 16px;
   }
 
