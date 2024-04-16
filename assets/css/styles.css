@@ -43,16 +43,32 @@
   background-color: var(--white);
 }
 
+.color-white {
+  color: var(--white)
+}
+
 .bg-pink {
   background-color: var(--lightPink);
+}
+
+.color-pink {
+  color: var(--lightPink)
 }
 
 .bg-grey-purple {
   background-color: var(--greyPurple);
 }
 
+.color-grey-purple {
+  color: var(--greyPurple)
+}
+
 .bg-dark-purple {
   background-color: var(--darkPurple);
+}
+
+.color-dark-purple {
+  color: var(--darkPurple)
 }
 
 /* Typography */
@@ -83,6 +99,10 @@ h6 {
   width: 100%;
   padding: 25px 15px;
   text-align: center;
+}
+
+.faq-question {
+  border-bottom: 1px solid #f6f6f6;
 }
 
 header.top {
