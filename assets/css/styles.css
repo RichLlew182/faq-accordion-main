@@ -1,0 +1,352 @@
+/* Regular */
+@font-face {
+  font-family: 'WorkSansRegular';
+  src: url('../fonts/static/WorkSans-Regular.ttf') format('woff2'),
+    url('../fonts/static/WorkSans-Regular.ttf') format('woff'),
+    url('../fonts/static/WorkSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Semi Bold */
+@font-face {
+  font-family: 'WorkSansSemiBold';
+  src: url('../fonts/static/WorkSans-SemiBold.ttf') format('woff2'),
+    url('../fonts/static/WorkSans-SemiBold.ttf') format('woff'),
+    url('../fonts/static/WorkSans-SemiBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'WorkSansBold';
+  src: url('../fonts/static/WorkSans-Bold.ttf') format('woff2'),
+    url('../fonts/static/WorkSans-Bold.ttf') format('woff'),
+    url('../fonts/static/WorkSans-Bold.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lightPink: hsl(275, 100%, 97%);
+  --brightPurple: #ad28eb;
+  --greyPurple: hsl(292, 16%, 49%);
+  --darkPurple: hsl(292, 42%, 14%)
+}
+
+/* Resets */
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Utility Classes */
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.color-white {
+  color: var(--white)
+}
+
+.bg-pink {
+  background-color: var(--lightPink);
+}
+
+.color-pink {
+  color: var(--lightPink)
+}
+
+.bg-grey-purple {
+  background-color: var(--greyPurple);
+}
+
+.color-grey-purple {
+  color: var(--greyPurple)
+}
+
+.bg-dark-purple {
+  background-color: var(--darkPurple);
+}
+
+.color-dark-purple {
+  color: var(--darkPurple)
+}
+
+/* Typography */
+
+body {
+  font-family: 'WorkSansRegular', Arial, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: 'WorkSansBold', Arial, sans-serif;
+  font-size: 56px;
+}
+
+h2 {
+  font-family: 'WorkSansSemiBold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+/* Custom Styling */
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.attribution {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--darkPurple)
+}
+
+
+header.top {
+  background-image: url(../images/background-pattern-desktop.svg);
+  height: 360px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+}
+
+#faqContainer {
+  z-index: 1;
+  position: relative;
+  margin: auto;
+  padding: 60px 40px;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 50px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 50px 0px;
+}
+
+#faqContainer>*+* {
+  margin-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.faq-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+
+.faq {
+  border-bottom: 2px solid #faf9ff;
+}
+
+.faq-question {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+  cursor: pointer;
+  -webkit-transition: ease .3s;
+  -o-transition: ease .3s;
+  transition: ease .3s;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+}
+
+.faq-question:hover,
+.faq-question:focus,
+.faq-question:focus-visible {
+  color: var(--brightPurple);
+}
+
+#faqContainer .faq:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+
+.faq:last-child .faq-question {
+  padding-bottom: 0;
+}
+
+.faq-answer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: ease .5s;
+  -o-transition: ease .5s;
+  transition: ease .5s
+}
+
+.faq.active .faq-answer {
+  margin-top: 1.5em;
+  opacity: 1;
+  max-height: 1000px;
+}
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+
+  header.top {
+    background-image: url(../images/background-pattern-mobile.svg);
+    height: 235px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 85%;
+  }
+
+  #faqContainer {
+    padding: 30px 25px;
+    border-radius: 10px;
+  }
+
+  #faqContainer>*+* {
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .faq.active .faq-answer {
+    margin-top: 20px;
+  }
+
+  .faq-heading img {
+    width: 25px;
+    height: 25px;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .container {
+    width: 900px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .container {
+    width: 600px;
+  }
+}
