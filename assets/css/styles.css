@@ -261,14 +261,19 @@ section#faqContainer .faq:last-child {
 }
 
 
-.faq-answer.collapsed {
-  height: 0;
+.faq-answer {
+  max-height: 0;
+  opacity: 0;
   overflow: hidden;
+  -webkit-transition: ease .5s;
+  -o-transition: ease .5s;
+  transition: ease .5s
 }
 
-.faq-answer.open {
+.faq.open .faq-answer {
   margin-top: 1.5em;
-  height: auto;
+  opacity: 1;
+  max-height: 1000px;
 }
 
 /* Media Queries */
