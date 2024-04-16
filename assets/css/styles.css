@@ -208,8 +208,8 @@ header.top {
   margin: auto;
   padding: 60px 40px;
   border-radius: 20px;
-  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 50px 0px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 50px 0px;
+  -webkit-box-shadow: rgb(126 62 139 / 20%) 0px 7px 50px 0px;
+  box-shadow: rgb(126 62 139 / 20%) 0px 7px 50px 0px
 }
 
 #faqContainer>*+* {
